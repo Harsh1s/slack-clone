@@ -122,7 +122,7 @@ const Verify: NextPage = () => {
             component="a"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/adeolaadeoti"
+            href="https://github.com/harsh1s"
             leftIcon={<IoLogoGithub size="1.4rem" />}
             styles={(theme) => ({
               root: {
@@ -140,7 +140,7 @@ const Verify: NextPage = () => {
               },
             })}
           >
-            adeolaadeoti
+            harsh1s
           </MantineButton>
         </Center>
       </Stack>

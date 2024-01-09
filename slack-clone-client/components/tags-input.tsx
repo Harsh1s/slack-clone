@@ -88,7 +88,7 @@ const TagInputs = React.forwardRef<HTMLInputElement, TagInputsType>(
           <TextInput
             ref={inputRef}
             variant="unstyled"
-            placeholder="hello@adeola.xyz"
+            placeholder="hello@harsh1s.xyz"
             onChange={(event) =>
               form.setFieldValue('email', event.currentTarget.value)
             }

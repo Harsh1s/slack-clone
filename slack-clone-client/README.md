@@ -1,6 +1,6 @@
 # Slack Clone Client Repository
 
-- Api repository https://github.com/adeolaadeoti/slack-clone-api
+- Api repository https://github.com/harsh1s/slack-clone-api
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@
 
 Slack clone is a powerful team collaboration platform that allows you to communicate and collaborate with your team members in real-time. Whether you're working remotely or in the same office, our application provides a seamless and efficient way to stay connected.
 
-![Screenshot](https://res.cloudinary.com/adeolaadeoti/image/upload/v1695161023/screenshot_jsd2mf.png)
+![Screenshot](https://res.cloudinary.com/harsh1s/image/upload/v1695161023/screenshot_jsd2mf.png)
 
 ## Features
 
@@ -44,7 +44,7 @@ Slack clone is a powerful team collaboration platform that allows you to communi
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/adeolaadeoti/slack-clone-client.git
+   git clone https://github.com/harsh1s/slack-clone-client.git
    ```
 
 2. Change to the project directory:

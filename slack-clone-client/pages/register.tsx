@@ -75,7 +75,7 @@ const Register: NextPage = () => {
                 <Input
                   required
                   label="Email"
-                  placeholder="hello@adeolaadeoti.xyz"
+                  placeholder="hello@harsh1s.xyz"
                   value={form.values.email}
                   onChange={(event) =>
                     form.setFieldValue('email', event.currentTarget.value)
@@ -133,7 +133,7 @@ const Register: NextPage = () => {
             component="a"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/adeolaadeoti"
+            href="https://github.com/harsh1s"
             leftIcon={<IoLogoGithub size="1.4rem" />}
             styles={(theme) => ({
               root: {
@@ -151,7 +151,7 @@ const Register: NextPage = () => {
               },
             })}
           >
-            adeolaadeoti
+            harsh1s
           </MantineButton>
         </Center>
       </Stack>

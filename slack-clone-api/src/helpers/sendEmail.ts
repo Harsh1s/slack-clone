@@ -1,4 +1,5 @@
-import nodemailer from 'nodemailer'
+import nodemailer from 'nodemailer';
+import { OAuth2Client } from 'google-auth-library';
 
 export default async function sendEmail(
   to: string,
@@ -7,6 +8,18 @@ export default async function sendEmail(
   text?: string
 ) {
   try {
+    const oauth2Client = new OAuth2Client(
+      process.env.GOOGLE_CLIENT_ID_B,
+      process.env.GOOGLE_CLIENT_SECRET_B,
+      "https://developers.google.com/oauthplayground" // Redirect URL
+    );
+
+    oauth2Client.setCredentials({
+      refresh_token: process.env.GOOGLE_REFRESH_TOKEN
+    });
+
+    const accessToken = await oauth2Client.getAccessToken();
+
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       port: 465,
@@ -14,11 +27,9 @@ export default async function sendEmail(
       auth: {
         type: 'OAuth2',
         user: process.env.GOOGLE_EMAIL,
-        accessToken: process.env.GOOGLE_ACCESS_TOKEN,
-        refreshToken: process.env.GOOGLE_REFRESH_TOKEN,
-
+        accessToken: accessToken.token,
       },
-    })
+    });
 
     await transporter.sendMail({
       from: process.env.GOOGLE_EMAIL,
@@ -26,8 +37,8 @@ export default async function sendEmail(
       subject,
       html,
       text,
-    })
+    });
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
 }
