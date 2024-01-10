@@ -1,6 +1,4 @@
-# Slack Clone Api Repository
-
-- Client repository https://github.com/harsh1s/slack-clone-client
+# Slack Clone Api
 
 ## Table of Contents
 
@@ -14,14 +12,11 @@
   - [Sending Messages](#sending-messages)
   - [Message Replies (Threads)](#message-replies-threads)
   - [Huddle with Other Users](#huddle-with-other-users)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
 
 Slack clone is a powerful team collaboration platform that allows you to communicate and collaborate with your team members in real-time. Whether you're working remotely or in the same office, our application provides a seamless and efficient way to stay connected.
-
-![Screenshot](https://res.cloudinary.com/harsh1s/image/upload/v1695161023/screenshot_jsd2mf.png)
 
 ## Features
 
@@ -44,10 +39,10 @@ Slack clone is a powerful team collaboration platform that allows you to communi
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/harsh1s/slack-clone-api.git
+   git clone https://github.com/harsh1s/slack-clone.git
    ```
 
-2. Change to the project directory:
+2. Change to the api directory:
 
    ```bash
    cd slack-clone-api
@@ -64,17 +59,21 @@ Slack clone is a powerful team collaboration platform that allows you to communi
    Create a `.env` file in the root directory of the project and add the necessary environment variables, including your database connection details and any API keys.
 
    ```plaintext
-   MONGODB_URI=
-   JWT_SECRET=
-   JWT_EXPIRE=30d
-   SMTP_USERNAME=
-   SMTP_PASSWORD=
-   MONGODB_DB_NAME=slack-clone-dev
-   NODE_ENV=development
-   GOOGLE_CLIENT_ID=
-   GOOGLE_CLIENT_SECRET=
-   CLIENT_URL=http://localhost:3000
-   API_URL=http://localhost:5000/api/v1
+  MONGODB_URI=
+  JWT_SECRET=
+  JWT_EXPIRE=
+  MONGODB_DB_NAME=
+  NODE_ENV=development
+  GOOGLE_CLIENT_ID=
+  GOOGLE_CLIENT_SECRET=
+  CLIENT_URL=http://localhost:3000
+  API_URL=http://localhost:5000/api/v1
+  GOOGLE_EMAIL=
+  GOOGLE_ACCESS_TOKEN=
+  GOOGLE_REFRESH_TOKEN=
+  GOOGLE_CLIENT_ID_B=
+  GOOGLE_CLIENT_SECRET_B=
+   
    ```
 
 5. Start the application:
@@ -136,10 +135,6 @@ Slack clone is a powerful team collaboration platform that allows you to communi
    - Start your private conversation.
 
 2. Huddles provide a secure environment for group discussions with select team members.
-
-## Contributing
-
-We welcome contributions from the community.
 
 ## License
 
