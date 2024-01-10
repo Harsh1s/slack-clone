@@ -59,20 +59,20 @@ Slack clone is a powerful team collaboration platform that allows you to communi
    Create a `.env` file in the root directory of the project and add the necessary environment variables, including your database connection details and any API keys.
 
    ```plaintext
-  MONGODB_URI=
-  JWT_SECRET=
-  JWT_EXPIRE=
-  MONGODB_DB_NAME=
-  NODE_ENV=development
-  GOOGLE_CLIENT_ID=
-  GOOGLE_CLIENT_SECRET=
-  CLIENT_URL=http://localhost:3000
-  API_URL=http://localhost:5000/api/v1
-  GOOGLE_EMAIL=
-  GOOGLE_ACCESS_TOKEN=
-  GOOGLE_REFRESH_TOKEN=
-  GOOGLE_CLIENT_ID_B=
-  GOOGLE_CLIENT_SECRET_B=
+    MONGODB_URI=
+    JWT_SECRET=
+    JWT_EXPIRE=
+    MONGODB_DB_NAME=
+    NODE_ENV=development
+    GOOGLE_CLIENT_ID=
+    GOOGLE_CLIENT_SECRET=
+    CLIENT_URL=http://localhost:3000
+    API_URL=http://localhost:5000/api/v1
+    GOOGLE_EMAIL=
+    GOOGLE_ACCESS_TOKEN=
+    GOOGLE_REFRESH_TOKEN=
+    GOOGLE_CLIENT_ID_B=
+    GOOGLE_CLIENT_SECRET_B=
    
    ```
 
